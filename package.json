@@ -1,0 +1,14 @@
+{
+  "name": "layout-practice",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lykoffant/layout-practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lykoffant/layout-practice/issues"
+  },
+  "homepage": "https://github.com/lykoffant/layout-practice#readme"
+}

@@ -9,3 +9,7 @@ The goal of the project is to demonstrate the completion of the second practice 
 ## Demonstration of layout
 
 Test [web page](/dist/index.html).
+
+## Technical task
+
+The technical task is described in the second task from the [list](https://rizzoma.com/topic/d5c429337bcaa70548fb5aeedee6d92b/0_b_8ndo_78h6s/) created by [FSD (FullStack Development)](https://www.fullstack-development.com/).

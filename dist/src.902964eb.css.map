@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAEI,gCACE","file":"src.902964eb.css","sourceRoot":"../src","sourcesContent":[".style-tester {\n  &_background {\n    &_yellow {\n      background-color: yellow;\n    }\n  }\n}\n"]}

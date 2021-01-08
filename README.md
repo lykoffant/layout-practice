@@ -1,6 +1,6 @@
 # layout-practice
 
-This repository contains the layout of the website. This project is not finished yet and is under development.
+[This repository](https://github.com/lykoffant/layout-practice) contains the layout of the website. This project is not finished yet and is under development.
 
 ## Objective of the project
 

@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["scriptTester","document","querySelector","textContent"],"mappings":";AAAA,IAAIA,EAAeC,SAASC,cAAc,kBAE1CF,EAAaG,YAAc","file":"src.ab618eeb.js","sourceRoot":"../src","sourcesContent":["let scriptTester = document.querySelector(\".script-tester\");\n\nscriptTester.textContent = \"JavaScript is working!\";\n"]}

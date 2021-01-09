@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/lykoffant/layout-practice#readme",
   "devDependencies": {
+    "husky": "^4.3.7",
     "parcel-bundler": "^1.12.4",
     "pug": "^3.0.0",
     "sass": "^1.32.0"

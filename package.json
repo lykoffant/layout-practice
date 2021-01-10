@@ -1,8 +1,8 @@
 {
   "name": "layout-practice",
   "scripts": {
-    "dev": "parcel src/index.pug",
-    "build": "parcel build src/index.pug --public-url ./",
+    "dev": "parcel src/ui-kit.pug",
+    "build": "parcel build src/ui-kit.pug --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {

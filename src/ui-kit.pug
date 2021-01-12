@@ -1,3 +1,5 @@
+include library.blocks/heading-level-1/heading-level-1
+
 doctype html
 html(lang="en")
   head
@@ -7,4 +9,4 @@ html(lang="en")
     link(rel="stylesheet" href="library.blocks/heading-level-1/heading-level-1.scss")
     title UI kit
   body
-  h1.heading-level-1.heading-level-1_hidden UI kit
+    +heading-level-1({text: "UI kit", hidden: true})

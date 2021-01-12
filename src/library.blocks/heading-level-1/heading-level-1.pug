@@ -1,0 +1,12 @@
+//-
+  options.text - some text (string)
+  options.hidden - hide heading level 1 (boolean)
+
+mixin heading-level-1(options)
+  if !options
+    - options = {}
+  -
+    var text = options.text;
+    var hidden = options.hidden;
+
+  h1.heading-level-1(class=hidden ? "heading-level-1_hidden" : "")= text

@@ -1,1 +1,0 @@
-{"version":3,"sources":["library.blocks/heading-level-1/_hidden/heading-level-1_hidden.scss"],"names":[],"mappings":"AAAA;EACE","file":"ui-kit.209ca014.css","sourceRoot":"../src","sourcesContent":[".heading-level-1_hidden {\n  display: none;\n}\n"]}

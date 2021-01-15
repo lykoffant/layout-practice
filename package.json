@@ -1,7 +1,7 @@
 {
   "name": "layout-practice",
   "scripts": {
-    "dev": "parcel src/ui-kit.pug",
+    "dev": "parcel src/ui-kit.pug --out-dir dist-dev",
     "build": "parcel build src/ui-kit.pug --public-url ./",
     "commit-all": "npm run build && git add . && git commit",
     "test": "echo \"Error: no test specified\" && exit 1"

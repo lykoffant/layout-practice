@@ -6,3 +6,12 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: variables.$font-family;
+  font-weight: variables.$font-weight-normal;
+  font-style: variables.$font-style;
+  font-size: variables.$font-size;
+  line-height: variables.$line-height;
+  color: variables.$color-dark-100;
+}

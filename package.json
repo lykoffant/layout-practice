@@ -1,5 +1,6 @@
 {
   "name": "layout-practice",
+  "private": true,
   "scripts": {},
   "repository": {
     "type": "git",

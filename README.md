@@ -8,7 +8,9 @@ The goal of the project is to demonstrate the completion of the second practice 
 
 ## Demonstration of layout
 
-[UI kit](/dist/ui-kit.html).
+UI kit:
+- [development mode](/dist/development/ui-kit.html);
+- [production mode](/dist/production/ui-kit.html).
 
 ## Technical task
 

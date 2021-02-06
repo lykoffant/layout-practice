@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "stylelint-no-unsupported-browser-features"
+  ],
+  "extends": [
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-hudochenkov/order"
+  ],
+  "rules": {
+    "order/properties-alphabetical-order": null,
+    "selector-class-pattern": ".*",
+    "plugin/no-unsupported-browser-features": [true, {
+      "severity": "warning"
+    }]
+  },
+  "ignoreFiles": ["dist/**/*.*"]
+}

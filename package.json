@@ -1,11 +1,6 @@
 {
   "name": "layout-practice",
-  "scripts": {
-    "dev": "parcel src/ui-kit.pug --out-dir dist-dev",
-    "build": "parcel build src/ui-kit.pug --public-url ./",
-    "commit-all": "npm run build && git add . && git commit",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lykoffant/layout-practice.git"
@@ -14,9 +9,5 @@
     "url": "https://github.com/lykoffant/layout-practice/issues"
   },
   "homepage": "https://github.com/lykoffant/layout-practice#readme",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "pug": "^3.0.0",
-    "sass": "^1.32.0"
-  }
+  "devDependencies": {}
 }

@@ -2,6 +2,10 @@
   "name": "layout-practice",
   "private": true,
   "scripts": {},
+  "author": {
+    "name": "Anton Lykov",
+    "email": "lykoffant@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lykoffant/layout-practice.git"

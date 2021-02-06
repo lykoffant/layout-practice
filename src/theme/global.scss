@@ -8,10 +8,10 @@
 }
 
 body {
-  font-family: variables.$font-family;
+  color: variables.$color-dark-100;
   font-weight: variables.$font-weight-normal;
   font-style: variables.$font-style;
   font-size: variables.$font-size;
+  font-family: variables.$font-family;
   line-height: variables.$line-height;
-  color: variables.$color-dark-100;
 }

@@ -1,6 +1,15 @@
 {
   "name": "layout-practice",
   "description": "Test task execution. Website layout.",
+  "keywords": [
+    "website",
+    "ui-kit",
+    "layout",
+    "webpack",
+    "pug",
+    "scss",
+    "javascript"
+  ],
   "private": true,
   "scripts": {
     "serv": "cross-env NODE_ENV=development-serve webpack serve",

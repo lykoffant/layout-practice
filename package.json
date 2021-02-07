@@ -1,5 +1,6 @@
 {
   "name": "layout-practice",
+  "description": "Test task execution. Website layout.",
   "private": true,
   "scripts": {
     "serv": "cross-env NODE_ENV=development-serve webpack serve",

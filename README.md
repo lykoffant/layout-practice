@@ -20,7 +20,7 @@ The technical task is described in the second task from the [list](https://rizzo
 ## Features
 
 - [Webpack](https://webpack.js.org)
-  - [Plugins](#Plugins)
+  - [Plugins](#Webpack-plugins)
   - [Loaders](#Loaders)
 - [Webpack CLI](https://github.com/webpack/webpack-cli)
 - [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
@@ -30,7 +30,7 @@ The technical task is described in the second task from the [list](https://rizzo
 - [npm-run-all](https://github.com/mysticatea/npm-run-all)
 - [cross-env](https://github.com/kentcdodds/cross-env)
 
-### Plugins
+### Webpack plugins
 
 - [Clean Webpack Plugin](https://github.com/johnagan/clean-webpack-plugin)
 - [Html Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)

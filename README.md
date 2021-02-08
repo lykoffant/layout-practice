@@ -77,3 +77,79 @@ The technical task is described in the second task from the [list](https://rizzo
   - [@babel/core](https://github.com/babel/babel/tree/main/packages/babel-core)
   - [@babel/preset-env](https://github.com/babel/babel/tree/main/packages/babel-preset-env)
   - [@babel/eslint-parser](https://github.com/babel/babel/tree/main/eslint/babel-eslint-parser)
+
+## How to work
+
+### Install dependencies
+
+```commandline
+npm install
+```
+
+### Start development server
+
+```commandline
+npm run serv
+```
+
+### Build a project for development
+
+```commandline
+npm run dev
+```
+
+### Build a project for production
+
+```commandline
+npm run build
+```
+
+### Commit all changes
+
+Build a project for development and production, and then commit all changes.
+
+```commandline
+npm run commit-all
+```
+
+### Format source code
+
+```commandline
+npm run format
+```
+
+### Check source code
+
+```commandline
+npm run check
+```
+
+#### Check source code formatting
+
+```commandline
+npm run check:prettier
+```
+
+#### Check source code of the styles
+
+```commandline
+npm run check:stylelint
+```
+
+##### Check source code of the styles and fix it
+
+```commandline
+npm run check:stylelint -- --fix
+```
+
+##### Check source code of the styles and fix it with formatting
+
+```commandline
+npm run check:stylelint -- --fix && npm run format
+```
+
+#### Check source code of the scripts
+
+```commandline
+npm run check:eslint
+```

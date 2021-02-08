@@ -21,7 +21,7 @@ The technical task is described in the second task from the [list](https://rizzo
 
 - [Webpack](https://webpack.js.org)
   - [Plugins](#Webpack-plugins)
-  - [Loaders](#Loaders)
+  - [Loaders](#Webpack-loaders)
 - [Webpack CLI](https://github.com/webpack/webpack-cli)
 - [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
 - [Devtool](https://webpack.js.org/configuration/devtool/)
@@ -60,7 +60,7 @@ The technical task is described in the second task from the [list](https://rizzo
   - [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant#readme)
   - [imagemin-svgo](https://github.com/imagemin/imagemin-svgo#readme)
 
-### Loaders
+### Webpack loaders
 
 - [file-loader](https://webpack.js.org/loaders/)
 - [pug-loader](https://github.com/pugjs/pug-loader)

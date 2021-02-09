@@ -1,7 +1,5 @@
 # layout-practice
 
-## Short description
-
 [This repository](https://github.com/lykoffant/layout-practice) contains the layout of the website. This project is not finished yet and is under development.
 
 ## Table of contents

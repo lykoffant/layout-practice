@@ -49,7 +49,7 @@ The technical task is described in the second task from the [list](https://rizzo
 - [npm-run-all](https://github.com/mysticatea/npm-run-all)
 - [cross-env](https://github.com/kentcdodds/cross-env)
 
-### Webpack plugins
+#### Webpack plugins
 
 - [Clean Webpack Plugin](https://github.com/johnagan/clean-webpack-plugin)
 - [Html Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)
@@ -79,7 +79,7 @@ The technical task is described in the second task from the [list](https://rizzo
   - [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant#readme)
   - [imagemin-svgo](https://github.com/imagemin/imagemin-svgo#readme)
 
-### Webpack loaders
+#### Webpack loaders
 
 - [file-loader](https://webpack.js.org/loaders/)
 - [pug-loader](https://github.com/pugjs/pug-loader)

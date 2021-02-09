@@ -96,6 +96,142 @@ The technical task is described in the second task from the [list](https://rizzo
   - [@babel/preset-env](https://github.com/babel/babel/tree/main/packages/babel-preset-env)
   - [@babel/eslint-parser](https://github.com/babel/babel/tree/main/eslint/babel-eslint-parser)
 
+### File structure
+
+#### `root`
+
+```
+root
+├── dist
+├── src
+├── .browserslistrc
+├── .eslintrc.json
+├── .gitignore
+├── .prettierrc.json
+├── .stylelintrc.json
+├── README.md
+├── babel.config.json
+├── package-lock.json
+├── package.json
+└── webpack.config.js
+```
+
+##### `src`
+
+```
+root/src/
+├── components
+├── pages
+└── theme
+```
+
+###### `components`
+
+```
+root/src/components/
+└── library.blocks
+    ├── demo-section
+    │   ├── demo-section.js
+    │   ├── demo-section.pug
+    │   ├── demo-section.scss
+    │   └── logo.svg
+    └── heading-level-1
+        ├── _hidden
+        │   ├── heading-level-1_hidden.js
+        │   └── heading-level-1_hidden.scss
+        ├── heading-level-1.js
+        ├── heading-level-1.pug
+        └── heading-level-1.scss
+```
+
+###### `theme`
+
+```
+root/src/theme/
+├── fonts
+│   ├── Montserrat
+│   │   ├── Montserrat-Bold.svg
+│   │   ├── Montserrat-Bold.ttf
+│   │   ├── Montserrat-Bold.woff
+│   │   ├── Montserrat-Regular.svg
+│   │   ├── Montserrat-Regular.ttf
+│   │   ├── Montserrat-Regular.woff
+│   │   └── OFL.txt
+│   └── fonts.scss
+├── favicon.jpg
+├── global.scss
+└── variables.scss
+```
+
+###### `pages`
+
+```
+root/src/pages/
+└── ui-kit
+    ├── ui-kit.js
+    └── ui-kit.pug
+```
+
+##### `dist`
+
+```
+root/dist/
+├── development
+└── production
+```
+
+###### `development`
+
+```
+root/dist/development/
+├── favicons
+│   └── favicon.jpg
+├── fonts
+│   ├── Montserrat-Bold.079ca05d3ded9bc107ab8a8da013be22.ttf
+│   ├── Montserrat-Bold.20cbced113d2ce2b39538419e59883e7.svg
+│   ├── Montserrat-Bold.4daf156dd0749a7c2469abc813f3950f.woff
+│   ├── Montserrat-Regular.3cd786652b8a2e9d41f210cb1a527ff6.ttf
+│   ├── Montserrat-Regular.4972a63efd7113b767a58fdbb7b2ce6d.woff
+│   └── Montserrat-Regular.faf1674c5ade844bbbe6f84e0a997fdc.svg
+├── images
+│   └── logo.c2a93d6ae04f381031de3bb8cecdf4b0.svg
+├── scripts
+│   ├── obsolete.e835565041ff02636a94eef11b91c302.js
+│   ├── obsolete.e835565041ff02636a94eef11b91c302.js.map
+│   ├── ui-kit.7f8b175858f09a378a64.js
+│   └── ui-kit.7f8b175858f09a378a64.js.map
+├── style
+│   ├── ui-kit.a92fd7b447d27fbd7c21.css
+│   └── ui-kit.a92fd7b447d27fbd7c21.css.map
+└── ui-kit.html
+```
+
+###### `production`
+
+```
+root/dist/production/
+├── favicons
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon-48x48.png
+│   └── favicon.ico
+├── fonts
+│   ├── Montserrat-Bold.079ca05d3ded9bc107ab8a8da013be22.ttf
+│   ├── Montserrat-Bold.21abe37ea60f2ed98f502d03eb5b3f2e.svg
+│   ├── Montserrat-Bold.4daf156dd0749a7c2469abc813f3950f.woff
+│   ├── Montserrat-Regular.3cd786652b8a2e9d41f210cb1a527ff6.ttf
+│   ├── Montserrat-Regular.4972a63efd7113b767a58fdbb7b2ce6d.woff
+│   └── Montserrat-Regular.89c64238f78cf22052f4391d87ec4a74.svg
+├── images
+│   └── logo.4aed963919244bf33f7b9fb4e92a7f0b.svg
+├── scripts
+│   ├── obsolete.e835565041ff02636a94eef11b91c302.js
+│   └── ui-kit.31d6cfe0d16ae931b73c.js
+├── style
+│   └── ui-kit.00bc9be88aa9d6642a9f.css
+└── ui-kit.html
+```
+
 ## How to work
 
 ### Install dependencies

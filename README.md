@@ -109,6 +109,10 @@ npm install
 npm run serv
 ```
 
+To see all the possible project pages, visit:
+
+- [http://localhost:8080/ui-kit.html](http://localhost:8080/ui-kit.html)
+
 ### Build a project for development
 
 ```commandline

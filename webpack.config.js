@@ -30,7 +30,7 @@ module.exports = {
   target: isDevServ ? 'web' : 'browserslist',
   mode: isDev ? 'development' : 'production',
   entry: {
-    'ui-kit': path.resolve(__dirname, 'src/ui-kit.js'),
+    'ui-kit': path.resolve(__dirname, 'src/pages/ui-kit/ui-kit.js'),
   },
   output: {
     path: path.resolve(__dirname, getOutputDir(isDevServ, isDev)),
@@ -41,7 +41,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: 'ui-kit.html',
-      template: path.resolve(__dirname, 'src/ui-kit.pug'),
+      template: path.resolve(__dirname, 'src/pages/ui-kit/ui-kit.pug'),
       chunks: ['ui-kit'],
       inject: 'body',
     }),

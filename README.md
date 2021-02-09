@@ -4,20 +4,20 @@
 
 ## Table of contents
 
-- [Target of the project](Target-of-the-project)
-- [Demonstration of layout](Demonstration-of-layout)
-- [Technical task](Technical-task)
-- [Features](Features)
-  - [Webpack plugins](Webpack-plugins)
-  - [Webpack loaders](Webpack-loaders)
-- [How to work](How-to-work)
-  - [Install dependencies](Install-dependencies)
-  - [Start development server](Start-development-server)
-  - [Build a project for development](Build-a-project-for-development)
-  - [Build a project for production](Build-a-project-for-production)
-  - [Commit all changes](Commit-all-changes)
-  - [Format source code](Format-source-code)
-  - [Check source code](Check-source-code)
+- [Target of the project](#Target-of-the-project)
+- [Demonstration of layout](#Demonstration-of-layout)
+- [Technical task](#Technical-task)
+- [Features](#Features)
+  - [Webpack plugins](#Webpack-plugins)
+  - [Webpack loaders](#Webpack-loaders)
+- [How to work](#How-to-work)
+  - [Install dependencies](#Install-dependencies)
+  - [Start development server](#Start-development-server)
+  - [Build a project for development](#Build-a-project-for-development)
+  - [Build a project for production](#Build-a-project-for-production)
+  - [Commit all changes](#Commit-all-changes)
+  - [Format source code](#Format-source-code)
+  - [Check source code](#Check-source-code)
 
 ## Target of the project
 

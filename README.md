@@ -9,6 +9,7 @@
 - [Technical task](#Technical-task)
 - [Features](#Features)
   - [Dependencies](#Dependencies)
+  - [File structure](#File-structure)
 - [How to work](#How-to-work)
   - [Install dependencies](#Install-dependencies)
   - [Start development server](#Start-development-server)

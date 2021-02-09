@@ -1,5 +1,9 @@
 # layout-practice
 
+## Short description
+
+[This repository](https://github.com/lykoffant/layout-practice) contains the layout of the website. This project is not finished yet and is under development.
+
 ## Table of contents
 
 - [Short description](Short-description)
@@ -17,10 +21,6 @@
   - [Commit all changes](Commit-all-changes)
   - [Format source code](Format-source-code)
   - [Check source code](Check-source-code)
-
-## Short description
-
-[This repository](https://github.com/lykoffant/layout-practice) contains the layout of the website. This project is not finished yet and is under development.
 
 ## Target of the project
 

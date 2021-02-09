@@ -1,5 +1,7 @@
 # layout-practice
 
+## Table of contents
+
 - [Short description](Short-description)
 - [Target of the project](Target-of-the-project)
 - [Demonstration of layout](Demonstration-of-layout)

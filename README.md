@@ -36,6 +36,8 @@ The technical task is described in the second task from the [list](https://rizzo
 
 ## Features
 
+### Dependencies
+
 - [Webpack](https://webpack.js.org)
   - [Plugins](#Webpack-plugins)
   - [Loaders](#Webpack-loaders)

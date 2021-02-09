@@ -99,6 +99,17 @@ The technical task is described in the second task from the [list](https://rizzo
 
 ### File structure
 
+Folder list:
+
+- [root](#root)
+  - [src](#src)
+    - [components](#components)
+    - [theme](#theme)
+    - [pages](#pages)
+  - [dist](#dist)
+    - [development](#development)
+    - [production](#production)
+
 #### `root`
 
 ```

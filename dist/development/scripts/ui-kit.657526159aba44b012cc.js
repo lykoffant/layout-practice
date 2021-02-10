@@ -1,5 +1,18 @@
 (globalThis["webpackChunklayout_practice"] = globalThis["webpackChunklayout_practice"] || []).push([["ui-kit"],{
 
+/***/ "./src/components/library.blocks/demo-colors/demo-colors.js":
+/*!******************************************************************!*\
+  !*** ./src/components/library.blocks/demo-colors/demo-colors.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _demo_colors_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./demo-colors.scss */ "./src/components/library.blocks/demo-colors/demo-colors.scss");
+
+
+/***/ }),
+
 /***/ "./src/components/library.blocks/demo-section/demo-section.js":
 /*!********************************************************************!*\
   !*** ./src/components/library.blocks/demo-section/demo-section.js ***!
@@ -9,6 +22,8 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _demo_section_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./demo-section.scss */ "./src/components/library.blocks/demo-section/demo-section.scss");
+/* harmony import */ var _colors_and_type_demo_section_colors_and_type_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_colors-and-type/demo-section_colors-and-type.scss */ "./src/components/library.blocks/demo-section/_colors-and-type/demo-section_colors-and-type.scss");
+
 
 
 /***/ }),
@@ -52,8 +67,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _theme_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../theme/global.scss */ "./src/theme/global.scss");
 /* harmony import */ var _components_library_blocks_heading_level_1_heading_level_1_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/library.blocks/heading-level-1/heading-level-1.js */ "./src/components/library.blocks/heading-level-1/heading-level-1.js");
 /* harmony import */ var _components_library_blocks_demo_section_demo_section_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/library.blocks/demo-section/demo-section.js */ "./src/components/library.blocks/demo-section/demo-section.js");
+/* harmony import */ var _components_library_blocks_demo_colors_demo_colors_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/library.blocks/demo-colors/demo-colors.js */ "./src/components/library.blocks/demo-colors/demo-colors.js");
 
 
+
+
+
+/***/ }),
+
+/***/ "./src/components/library.blocks/demo-colors/demo-colors.scss":
+/*!********************************************************************!*\
+  !*** ./src/components/library.blocks/demo-colors/demo-colors.scss ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/components/library.blocks/demo-section/_colors-and-type/demo-section_colors-and-type.scss":
+/*!*******************************************************************************************************!*\
+  !*** ./src/components/library.blocks/demo-section/_colors-and-type/demo-section_colors-and-type.scss ***!
+  \*******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
 
 
 /***/ }),
@@ -112,4 +155,4 @@ __webpack_require__.r(__webpack_exports__);
 
 },
 0,[["./src/pages/ui-kit/ui-kit.js","vendors"]]]);
-//# sourceMappingURL=ui-kit.25b7be27ab999afc3e00.js.map
+//# sourceMappingURL=ui-kit.657526159aba44b012cc.js.map

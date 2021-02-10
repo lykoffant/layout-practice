@@ -38,5 +38,12 @@ body {
   background-position: 30px 30px;
   background-repeat: no-repeat;
 }
+.demo-section_colors-and-type {
+  padding: 145px 158px 145px 150px;
+}
+.demo-colors {
+  display: flex;
+  flex-direction: column;
+}
 
-/*# sourceMappingURL=ui-kit.a92fd7b447d27fbd7c21.css.map*/
+/*# sourceMappingURL=ui-kit.d13799e0de450bc2105b.css.map*/

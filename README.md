@@ -4,20 +4,20 @@
 
 ## Table of contents
 
-- [Target of the project](#Target-of-the-project)
-- [Demonstration of layout](#Demonstration-of-layout)
-- [Technical task](#Technical-task)
-- [Features](#Features)
-  - [Dependencies](#Dependencies)
-  - [File structure](#File-structure)
-- [How to work](#How-to-work)
-  - [Install dependencies](#Install-dependencies)
-  - [Start development server](#Start-development-server)
-  - [Build a project for development](#Build-a-project-for-development)
-  - [Build a project for production](#Build-a-project-for-production)
-  - [Commit all changes](#Commit-all-changes)
-  - [Format source code](#Format-source-code)
-  - [Check source code](#Check-source-code)
+- [Target of the project](#target-of-the-project)
+- [Demonstration of layout](#demonstration-of-layout)
+- [Technical task](#technical-task)
+- [Features](#features)
+  - [Dependencies](#dependencies)
+  - [File structure](#file-structure)
+- [How to work](#how-to-work)
+  - [Install dependencies](#install-dependencies)
+  - [Start development server](#start-development-server)
+  - [Build a project for development](#build-a-project-for-development)
+  - [Build a project for production](#build-a-project-for-production)
+  - [Commit all changes](#commit-all-changes)
+  - [Format source code](#format-source-code)
+  - [Check source code](#check-source-code)
 
 ## Target of the project
 

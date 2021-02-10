@@ -194,6 +194,10 @@ root/dist/
 
 ###### `development`
 
+> Note
+>
+> Demonstrated, the hash of the files may differ from the actual value.
+
 ```
 root/dist/development/
 ├── favicons
@@ -219,6 +223,10 @@ root/dist/development/
 ```
 
 ###### `production`
+
+> Note
+>
+> Demonstrated, the hash of the files may differ from the actual value.
 
 ```
 root/dist/production/

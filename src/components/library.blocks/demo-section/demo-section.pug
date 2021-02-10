@@ -1,3 +1,16 @@
-mixin demo-section
-  section.demo-section
+//-
+  options.sectionName - section name for UI kit (string)
+
+mixin demo-section(options)
+  if !options
+    - options = {};
+
+  - var sectionName = options.sectionName;
+  - var classes = "";
+
+  case sectionName
+    when "colors-and-type"
+      - classes = "demo-section_colors-and-type";
+
+  section.demo-section(class=classes)
     block

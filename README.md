@@ -48,6 +48,7 @@ The technical task is described in the second task from the [list](https://rizzo
 - [Browserslist](https://github.com/browserslist/browserslist)
 - [npm-run-all](https://github.com/mysticatea/npm-run-all)
 - [cross-env](https://github.com/kentcdodds/cross-env)
+- [Normalize.css](https://github.com/necolas/normalize.css/)
 
 #### Webpack plugins
 
@@ -214,11 +215,15 @@ root/dist/development/
 ├── scripts
 │   ├── obsolete.e835565041ff02636a94eef11b91c302.js
 │   ├── obsolete.e835565041ff02636a94eef11b91c302.js.map
-│   ├── ui-kit.7f8b175858f09a378a64.js
-│   └── ui-kit.7f8b175858f09a378a64.js.map
+│   ├── ui-kit.25b7be27ab999afc3e00.js
+│   ├── ui-kit.25b7be27ab999afc3e00.js.map
+│   ├── vendors.8ca585592b0fe1c8a269.js
+│   └── vendors.8ca585592b0fe1c8a269.js.map
 ├── style
 │   ├── ui-kit.a92fd7b447d27fbd7c21.css
-│   └── ui-kit.a92fd7b447d27fbd7c21.css.map
+│   ├── ui-kit.a92fd7b447d27fbd7c21.css.map
+│   ├── vendors.5c88d9a379095d470304.css
+│   └── vendors.5c88d9a379095d470304.css.map
 └── ui-kit.html
 ```
 
@@ -246,9 +251,11 @@ root/dist/production/
 │   └── logo.4aed963919244bf33f7b9fb4e92a7f0b.svg
 ├── scripts
 │   ├── obsolete.e835565041ff02636a94eef11b91c302.js
-│   └── ui-kit.31d6cfe0d16ae931b73c.js
+│   ├── ui-kit.e23f2e70f40e5e1e2739.js
+│   └── vendors.d1b4664c9e32c1634922.js
 ├── style
-│   └── ui-kit.00bc9be88aa9d6642a9f.css
+│   ├── ui-kit.00bc9be88aa9d6642a9f.css
+│   └── vendors.78216e31086858679b54.css
 └── ui-kit.html
 ```
 

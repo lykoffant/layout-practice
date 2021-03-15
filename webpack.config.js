@@ -14,12 +14,11 @@ const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const mode = process.env.NODE_ENV;
-const isDevServ = mode === 'development-serve' ? true : false;
-const isDev = mode === 'development' || isDevServ ? true : false;
+const isDev = mode === 'development' ? true : false;
 console.log('Webpack mode:', mode);
 
 module.exports = {
-  target: isDevServ ? 'web' : 'browserslist',
+  target: isDev ? 'web' : 'browserslist',
   mode: isDev ? 'development' : 'production',
   entry: {
     vendors: ['normalize.css'],
@@ -186,6 +185,6 @@ module.exports = {
   },
   devtool: isDev ? 'source-map' : false,
   devServer: {
-    contentBase: path.resolve(__dirname, 'serv/'),
+    contentBase: path.resolve(__dirname, 'dev/'),
   },
 };

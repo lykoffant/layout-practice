@@ -156,7 +156,7 @@ npm install
 ### Start development server
 
 ```commandline
-npm run serv
+npm run dev
 ```
 
 To see all the possible project pages, visit:

@@ -1,17 +1,7 @@
 @use './fonts/fonts.scss';
-@use './variables.scss';
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  color: variables.$color-dark-100;
-  font-weight: variables.$font-weight-normal;
-  font-style: variables.$font-style;
-  font-size: variables.$font-size;
-  font-family: variables.$font-family;
-  line-height: variables.$line-height;
 }

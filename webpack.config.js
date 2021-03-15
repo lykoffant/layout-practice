@@ -21,7 +21,7 @@ module.exports = {
   target: isDev ? 'web' : 'browserslist',
   mode: isDev ? 'development' : 'production',
   entry: {
-    vendors: ['normalize.css'],
+    vendors: ['normalize.css', 'jquery'],
     'ui-kit': path.resolve(__dirname, 'src/pages/ui-kit/ui-kit.js'),
   },
   output: {

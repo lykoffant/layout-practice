@@ -24,10 +24,7 @@ The target of the project is to demonstrate the completion of the second practic
 
 ## Demonstration of layout
 
-UI kit:
-
-- [development mode](/dist/development/ui-kit.html);
-- [production mode](/dist/production/ui-kit.html).
+Demonstration of the [UI kit](https://lykoffant.github.io/layout-practice/dist/ui-kit.html).
 
 ## Technical task
 

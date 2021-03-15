@@ -28,7 +28,7 @@ module.exports = {
     },
   },
   output: {
-    path: path.resolve(__dirname, 'dist/'),
+    path: path.resolve(__dirname, isDev ? 'dev/' : 'dist/'),
     filename: 'scripts/[name].[contenthash].js',
     publicPath: '',
   },

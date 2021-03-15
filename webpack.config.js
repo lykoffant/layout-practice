@@ -184,7 +184,4 @@ module.exports = {
     ],
   },
   devtool: isDev ? 'source-map' : false,
-  devServer: {
-    contentBase: path.resolve(__dirname, 'dev/'),
-  },
 };

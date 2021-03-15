@@ -29,6 +29,11 @@ module.exports = {
     filename: 'scripts/[name].[contenthash].js',
     publicPath: '',
   },
+  resolve: {
+    alias: {
+      '@theme': path.resolve(__dirname, 'src/theme/'),
+    },
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({

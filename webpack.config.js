@@ -21,7 +21,7 @@ module.exports = {
   target: isDev ? 'web' : 'browserslist',
   mode: isDev ? 'development' : 'production',
   entry: {
-    normalize: 'normalize.css',
+    vendors: ['normalize.css'],
     'ui-kit': path.resolve(__dirname, 'src/pages/ui-kit/ui-kit.js'),
   },
   output: {
@@ -34,7 +34,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'ui-kit.html',
       template: path.resolve(__dirname, 'src/pages/ui-kit/ui-kit.pug'),
-      chunks: ['ui-kit', 'normalize'],
+      chunks: ['ui-kit', 'vendors'],
       inject: 'body',
     }),
     new MiniCssExtractPlugin({

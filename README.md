@@ -40,8 +40,6 @@ Folder list:
     - [theme](#theme)
     - [pages](#pages)
   - [dist](#dist)
-    - [development](#development)
-    - [production](#production)
 
 #### `root`
 
@@ -119,54 +117,12 @@ root/src/pages/
 
 ##### `dist`
 
+> Note
+>
+> Demonstrated, the hash of the files may differ from the actual value.
+
 ```
 root/dist/
-├── development
-└── production
-```
-
-###### `development`
-
-> Note
->
-> Demonstrated, the hash of the files may differ from the actual value.
-
-```
-root/dist/development/
-├── favicons
-│   └── favicon.jpg
-├── fonts
-│   ├── Montserrat-Bold.079ca05d3ded9bc107ab8a8da013be22.ttf
-│   ├── Montserrat-Bold.20cbced113d2ce2b39538419e59883e7.svg
-│   ├── Montserrat-Bold.4daf156dd0749a7c2469abc813f3950f.woff
-│   ├── Montserrat-Regular.3cd786652b8a2e9d41f210cb1a527ff6.ttf
-│   ├── Montserrat-Regular.4972a63efd7113b767a58fdbb7b2ce6d.woff
-│   └── Montserrat-Regular.faf1674c5ade844bbbe6f84e0a997fdc.svg
-├── images
-│   └── logo.c2a93d6ae04f381031de3bb8cecdf4b0.svg
-├── scripts
-│   ├── obsolete.e835565041ff02636a94eef11b91c302.js
-│   ├── obsolete.e835565041ff02636a94eef11b91c302.js.map
-│   ├── ui-kit.25b7be27ab999afc3e00.js
-│   ├── ui-kit.25b7be27ab999afc3e00.js.map
-│   ├── vendors.8ca585592b0fe1c8a269.js
-│   └── vendors.8ca585592b0fe1c8a269.js.map
-├── style
-│   ├── ui-kit.a92fd7b447d27fbd7c21.css
-│   ├── ui-kit.a92fd7b447d27fbd7c21.css.map
-│   ├── vendors.5c88d9a379095d470304.css
-│   └── vendors.5c88d9a379095d470304.css.map
-└── ui-kit.html
-```
-
-###### `production`
-
-> Note
->
-> Demonstrated, the hash of the files may differ from the actual value.
-
-```
-root/dist/production/
 ├── favicons
 │   ├── favicon-16x16.png
 │   ├── favicon-32x32.png
@@ -183,10 +139,10 @@ root/dist/production/
 │   └── logo.4aed963919244bf33f7b9fb4e92a7f0b.svg
 ├── scripts
 │   ├── obsolete.e835565041ff02636a94eef11b91c302.js
-│   ├── ui-kit.e23f2e70f40e5e1e2739.js
-│   └── vendors.d1b4664c9e32c1634922.js
+│   ├── ui-kit.0245a86c418925da0f27.js
+│   └── vendors.5725986d8d64ce1b77c7.js
 ├── style
-│   ├── ui-kit.00bc9be88aa9d6642a9f.css
+│   ├── ui-kit.68a3292c2099cc887837.css
 │   └── vendors.78216e31086858679b54.css
 └── ui-kit.html
 ```

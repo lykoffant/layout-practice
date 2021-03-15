@@ -13,7 +13,6 @@
 - [How to work](#how-to-work)
   - [Install dependencies](#install-dependencies)
   - [Start development server](#start-development-server)
-  - [Build a project for development](#build-a-project-for-development)
   - [Build a project for production](#build-a-project-for-production)
   - [Commit all changes](#commit-all-changes)
   - [Format source code](#format-source-code)
@@ -277,11 +276,6 @@ To see all the possible project pages, visit:
 
 - [http://localhost:8080/ui-kit.html](http://localhost:8080/ui-kit.html)
 
-### Build a project for development
-
-```commandline
-npm run dev
-```
 
 ### Build a project for production
 

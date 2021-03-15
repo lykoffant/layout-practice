@@ -18,14 +18,6 @@ const isDevServ = mode === 'development-serve' ? true : false;
 const isDev = mode === 'development' || isDevServ ? true : false;
 console.log('Webpack mode:', mode);
 
-function getOutputDir(isDevServ, isDev) {
-  if (isDevServ) {
-    return 'dist/serve/';
-  }
-
-  return isDev ? 'dist/development/' : 'dist/production/';
-}
-
 module.exports = {
   target: isDevServ ? 'web' : 'browserslist',
   mode: isDev ? 'development' : 'production',
@@ -37,7 +29,7 @@ module.exports = {
     },
   },
   output: {
-    path: path.resolve(__dirname, getOutputDir(isDevServ, isDev)),
+    path: path.resolve(__dirname, 'dist/'),
     filename: 'scripts/[name].[contenthash].js',
     publicPath: '',
   },
@@ -194,6 +186,6 @@ module.exports = {
   },
   devtool: isDev ? 'source-map' : false,
   devServer: {
-    contentBase: path.resolve(__dirname, getOutputDir(isDevServ, isDev)),
+    contentBase: path.resolve(__dirname, 'serv/'),
   },
 };

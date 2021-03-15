@@ -28,7 +28,7 @@ Demonstration of the [UI kit](https://lykoffant.github.io/layout-practice/dist/u
 
 The technical task is described in the second task from the [list](https://rizzoma.com/topic/d5c429337bcaa70548fb5aeedee6d92b/0_b_8ndo_78h6s/) created by [MetaLamp](https://www.metalamp.io/).
 
-### File structure
+## File structure
 
 Folder list:
 
@@ -39,7 +39,7 @@ Folder list:
     - [pages](#pages)
   - [dist](#dist)
 
-#### `root`
+### `root`
 
 ```
 root
@@ -57,7 +57,7 @@ root
 └── webpack.config.js
 ```
 
-##### `src`
+#### `src`
 
 ```
 root/src/
@@ -66,7 +66,7 @@ root/src/
 └── theme
 ```
 
-###### `components`
+##### `components`
 
 ```
 root/src/components/
@@ -85,7 +85,7 @@ root/src/components/
         └── heading-level-1.scss
 ```
 
-###### `theme`
+##### `theme`
 
 ```
 root/src/theme/
@@ -104,7 +104,7 @@ root/src/theme/
 └── variables.scss
 ```
 
-###### `pages`
+##### `pages`
 
 ```
 root/src/pages/
@@ -113,7 +113,7 @@ root/src/pages/
     └── ui-kit.pug
 ```
 
-##### `dist`
+#### `dist`
 
 > Note
 >

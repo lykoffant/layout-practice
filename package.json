@@ -13,9 +13,8 @@
   "private": true,
   "scripts": {
     "serv": "cross-env NODE_ENV=development-serve webpack serve",
-    "dev": "cross-env NODE_ENV=development webpack",
     "build": "cross-env NODE_ENV=production webpack",
-    "commit-all": "npm-run-all dev build && git add . && git commit",
+    "commit-all": "npm-run-all build && git add . && git commit",
     "format": "prettier --write './src/**/*.(pug|scss|js)'",
     "check": "npm-run-all check:*",
     "check:prettier": "prettier --check './src/**/*.(pug|scss|js)'",

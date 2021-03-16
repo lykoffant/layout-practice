@@ -33,6 +33,7 @@ module.exports = {
     alias: {
       '@theme': path.resolve(__dirname, 'src/theme/'),
       '@components': path.resolve(__dirname, 'src/components/'),
+      '@node_modules': path.resolve(__dirname, 'node_modules/'),
     },
   },
   plugins: [

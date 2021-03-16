@@ -78,6 +78,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "bemto.pug": "^2.1.0",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1"
   }

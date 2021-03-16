@@ -32,6 +32,7 @@ module.exports = {
   resolve: {
     alias: {
       '@theme': path.resolve(__dirname, 'src/theme/'),
+      '@components': path.resolve(__dirname, 'src/components/'),
     },
   },
   plugins: [

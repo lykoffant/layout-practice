@@ -2,7 +2,7 @@ $dark-shade: #1f2041;
 
 $color-dark-100: $dark-shade;
 $color-dark-75: rgb($dark-shade, 0.75);
-$color-dark-50: rgb($dark-shade, $dark-blue, 0.5);
+$color-dark-50: rgb($dark-shade, 0.5);
 $color-dark-25: rgb($dark-shade, 0.25);
 $color-dark-5: rgb($dark-shade, 0.05);
 
@@ -15,3 +15,5 @@ $text-font-weight-bold: 700;
 $text-font-style: normal;
 $text-font-size: 14px;
 $text-line-height: 24px;
+
+$pixel-perfect-layout-with: 1440px;

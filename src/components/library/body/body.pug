@@ -1,0 +1,12 @@
+//-
+  options.fixedWidth - fixed container width for pixel perfect design (boolean)
+
+mixin body(options)
+  if !options
+    - options = {};
+  -
+    var classes = ''
+    classes += options.pixelPerfectDesign ? 'body_pixel-perfect-design' : ''
+
+  body.body(class=classes)
+    block

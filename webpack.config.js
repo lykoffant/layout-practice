@@ -120,6 +120,7 @@ module.exports = {
             loader: 'pug-loader',
             options: {
               pretty: true,
+              root: path.resolve(__dirname, 'src/'),
             },
           },
         ],

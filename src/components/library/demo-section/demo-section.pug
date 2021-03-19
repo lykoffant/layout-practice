@@ -1,0 +1,27 @@
+mixin demo-section(options)
+  if !options
+    - options = {};
+
+  -
+    var classes = '';
+
+    switch (options.theme) {
+      case 'colors-and-type':
+        classes += 'demo-section_theme_colors-and-type';
+        break
+      case 'form-elements':
+        classes += 'demo-section_theme_form-elements';
+        break
+      case 'cards':
+        classes += 'demo-section_theme_cards';
+        break
+      case 'headers-and-footers':
+        classes += 'demo-section_theme_headers-and-footers';
+        break
+    }
+
+    classes += ' ';
+    classes += options.mixins ? options.mixins.join(' ') : '';
+
+  section.demo-section(class=classes)
+    block

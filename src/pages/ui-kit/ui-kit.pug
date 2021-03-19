@@ -1,6 +1,7 @@
 include /components/library/body/body
 include /components/library/main/main
 include /components/library/title-1/title-1
+include /components/library/demo-section/demo-section
 
 doctype html
 html(lang='en')
@@ -12,3 +13,7 @@ html(lang='en')
   +body({pixelPerfectDesign: false})
     +main
       +title-1({ text: 'UI kit demo', visuallyHidden: true })
+      +demo-section({mixins: ['main__section'], theme: 'colors-and-type'})
+      +demo-section({mixins: ['main__section'], theme: 'form-elements'})
+      +demo-section({mixins: ['main__section'], theme: 'cards'})
+      +demo-section({mixins: ['main__section'], theme: 'headers-and-footers'})

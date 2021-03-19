@@ -1,4 +1,7 @@
 .demo-section_theme_colors-and-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 145px;
   padding-right: 11%;
   padding-bottom: 10%;

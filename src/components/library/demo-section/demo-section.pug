@@ -7,20 +7,22 @@ mixin demo-section(options)
     - options = {};
 
   -
-    var classes = '';
+    let classes = '';
+    const blockName = 'demo-section';
+    const modifierName = 'theme';
 
     switch (options.theme) {
       case 'colors-and-type':
-        classes += 'demo-section_theme_colors-and-type';
+        classes += `${blockName}_${modifierName}_colors-and-type`;
         break
       case 'form-elements':
-        classes += 'demo-section_theme_form-elements';
+        classes += `${blockName}_${modifierName}_form-elements`;
         break
       case 'cards':
-        classes += 'demo-section_theme_cards';
+        classes += `${blockName}_${modifierName}_cards`;
         break
       case 'headers-and-footers':
-        classes += 'demo-section_theme_headers-and-footers';
+        classes += `${blockName}_${modifierName}_headers-and-footers`;
         break
     }
 

@@ -1,5 +1,5 @@
 //-
-  options.mixins - an array of mix names (Array<string>)
+  options.mixes - an array of mix names (Array<string>)
   options.theme - theme name (string)
 
 mixin demo-section(options)
@@ -25,7 +25,7 @@ mixin demo-section(options)
     }
 
     classes += ' ';
-    classes += options.mixins ? options.mixins.join(' ') : '';
+    classes += options.mixes ? options.mixes.join(' ') : '';
 
   section.demo-section(class=classes)
     block

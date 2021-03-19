@@ -1,5 +1,6 @@
 include /components/library/body/body
 include /components/library/main/main
+include /components/library/title-1/title-1
 
 doctype html
 html(lang='en')
@@ -10,3 +11,4 @@ html(lang='en')
     title UI kit
   +body({pixelPerfectDesign: false})
     +main
+      +title-1({ text: 'UI kit demo', visuallyHidden: true })

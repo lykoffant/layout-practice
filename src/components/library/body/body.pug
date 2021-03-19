@@ -6,8 +6,8 @@ mixin body(options)
   if !options
     - options = {};
   -
-    var classes = ''
-    classes += options.pixelPerfectDesign ? 'body_pixel-perfect-design' : ''
+    var classes = '';
+    classes += options.pixelPerfectDesign ? 'body_pixel-perfect-design' : '';
 
   body.body(class=classes)
     block

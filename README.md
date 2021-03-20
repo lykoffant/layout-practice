@@ -12,7 +12,6 @@
   - [Install dependencies](#install-dependencies)
   - [Start development server](#start-development-server)
   - [Build a project for production](#build-a-project-for-production)
-  - [Commit all changes](#commit-all-changes)
   - [Format source code](#format-source-code)
   - [Check source code](#check-source-code)
 
@@ -163,19 +162,10 @@ To see all the possible project pages, visit:
 
 - [http://localhost:8080/ui-kit.html](http://localhost:8080/ui-kit.html)
 
-
 ### Build a project for production
 
 ```commandline
 npm run build
-```
-
-### Commit all changes
-
-Build a project for development and production, and then commit all changes.
-
-```commandline
-npm run commit-all
 ```
 
 ### Format source code

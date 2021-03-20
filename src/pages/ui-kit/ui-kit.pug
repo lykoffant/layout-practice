@@ -2,6 +2,7 @@ include /components/library/body/body
 include /components/library/main/main
 include /components/library/title-1/title-1
 include /components/library/demo-section/demo-section
+include /components/library/title-2/title-2
 
 doctype html
 html(lang='en')
@@ -14,6 +15,10 @@ html(lang='en')
     +main
       +title-1({ text: 'UI kit demo', visuallyHidden: true })
       +demo-section({mixes: ['main__section'], theme: 'colors-and-type'})
+        +title-2({text: 'Colors & Type', visuallyHidden: true})
       +demo-section({mixes: ['main__section'], theme: 'form-elements'})
+        +title-2({text: 'Form Elements', visuallyHidden: true})
       +demo-section({mixes: ['main__section'], theme: 'cards'})
+        +title-2({text: 'Cards', visuallyHidden: true})
       +demo-section({mixes: ['main__section'], theme: 'headers-and-footers'})
+        +title-2({text: 'Headers & Footers', visuallyHidden: true})

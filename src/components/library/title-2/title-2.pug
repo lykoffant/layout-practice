@@ -1,0 +1,14 @@
+//-
+  options.text            - block text (string)
+  options.vissuallyHidden - enable/disable available block hiding (boolean)
+  options.lang            - block language (string)
+
+mixin title-2(options)
+  if !options
+    - options = {};
+
+  -
+    var classes = '';
+    classes += options.visuallyHidden ? 'title-2_visually-hidden' : '';
+
+  h2.title-2(class=classes, lang=options.lang)= options.text

@@ -1,0 +1,11 @@
+@use '@theme/variables';
+
+.title-2 {
+  margin: 0;
+  color: variables.$dark-shade;
+  font-weight: variables.$text-font-weight-bold;
+  font-style: variables.$text-font-style;
+
+  font-size: 1.358rem;
+  line-height: 1.643rem;
+}

@@ -14,6 +14,11 @@
   - [Build a project for production](#build-a-project-for-production)
   - [Format source code](#format-source-code)
   - [Check source code](#check-source-code)
+- [Workflow](#workflow)
+  - [dev](#dev)
+  - [build](#build)
+  - [main](#main)
+  - [Procedure](#procedure)
 
 ## Target of the project
 
@@ -209,3 +214,39 @@ npm run check:stylelint -- --fix && npm run format
 ```commandline
 npm run check:eslint
 ```
+
+## Workflow
+
+Work on the project is split into three branches: `dev`, `build`, `main`.
+
+### `dev`
+
+Branch for project development. Merges into the `build` branch.
+
+### `build`
+
+Branch for building the production version of the project. Merges into the `main` branch.
+
+### `main`
+
+Branch for deploying the production version of the project to GitHub Pages.
+
+### Procedure
+
+List of actions:
+
+1. in the `dev` branch (`$ git checkout dev`):
+   1. make a development project (`$ npm run dev`);
+   2. make commits of changes;
+   3. check the code (`$ npm run check`);
+   4. push the changes in the branch to the remote repository (`$ git push origin dev`);
+2. in the `build` branch (`$ git checkout build`):
+   1. merge the dev branch with the build branch (`$ git merge dev --no-ff`);
+   2. build the project (`$ npm run build`);
+   3. commit changes (`$ git commit -am "Build this project"`);
+   4. push the changes in the branch to the remote repository (`$ git push origin build`);
+3. in the `main` branch (`$ git checkout main`):
+   1. merge the build branch with the main branch (`$ git merge build --no-ff`);
+   2. push the changes in the branch to the remote repository (`$ git push origin main`);
+   3. wait _(not necessary)_ for the end of the automatic deployment of the project to GitHub Pages;
+4. continue from the first item in this list of actions (`$ git checkout dev`).

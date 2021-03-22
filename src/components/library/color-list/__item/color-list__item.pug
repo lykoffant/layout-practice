@@ -1,0 +1,39 @@
+include /components/library/color-list/__color-name/color-list__color-name
+
+//-
+  options.colorName - color name (string)
+
+mixin color-list__item(options)
+  if !options
+    - options = {};
+
+  -
+    var classes = [];
+    var colorName = options.colorName;
+
+    switch (colorName) {
+      case 'Dark Shade 100%':
+        classes.push('color-list__item_color_dark-shade-100');
+        break;
+      case 'Dark Shade 75%':
+        classes.push('color-list__item_color_dark-shade-75');
+        break;
+      case 'Dark Shade 50%':
+        classes.push('color-list__item_color_dark-shade-50');
+        break;
+      case 'Dark Shade 25%':
+        classes.push('color-list__item_color_dark-shade-25');
+        break;
+      case 'Dark Shade 5%':
+        classes.push('color-list__item_color_dark-shade-5');
+        break;
+      case 'Purple':
+        classes.push('color-list__item_color_purple');
+        break;
+      case 'Green':
+        classes.push('color-list__item_color_green');
+        break;
+    }
+
+  li.color-list__item(class=classes.join(" "))
+    +color-list__color-name({colorName: colorName})

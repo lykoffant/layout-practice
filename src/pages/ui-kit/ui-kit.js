@@ -6,3 +6,4 @@ import '@components/library/title-1/title-1.js';
 import '@components/library/demo-section/demo-section.js';
 import '@components/library/title-2/title-2.js';
 import '@components/library/grid-of-colors-and-type/grid-of-colors-and-type.js';
+import '@components/library/color-list/color-list.js';

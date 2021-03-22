@@ -1,0 +1,9 @@
+.color-list__color-name {
+  display: flex;
+
+  grid-area: color-name;
+  align-self: center;
+
+  padding-top: 6px;
+  font-weight: 700;
+}

@@ -1,0 +1,33 @@
+.color-list__item {
+  display: grid;
+  grid-template-areas:
+    'color-box color-name'
+    'color-box color-code';
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto 1fr;
+  font-size: 1.358rem;
+  line-height: 2rem;
+
+  column-gap: 40px;
+}
+
+.color-list__item::before {
+  content: '';
+
+  grid-area: color-box;
+  width: 70px;
+  height: 70px;
+
+  border-radius: 6px;
+}
+
+.color-list__item::after {
+  display: flex;
+
+  grid-area: color-code;
+  align-self: center;
+
+  padding-bottom: 4px;
+
+  text-transform: uppercase;
+}

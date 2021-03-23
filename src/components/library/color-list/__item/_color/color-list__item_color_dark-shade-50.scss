@@ -1,0 +1,9 @@
+@use '@theme/variables';
+
+.color-list__item_color_dark-shade-50::before {
+  background-color: variables.$color-dark-50;
+}
+
+.color-list__item_color_dark-shade-50::after {
+  content: '#{variables.$dark-shade}';
+}

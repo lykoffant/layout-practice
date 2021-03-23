@@ -1,0 +1,9 @@
+@use '@theme/variables';
+
+.color-list__item_color_purple::before {
+  background-color: variables.$color-purple;
+}
+
+.color-list__item_color_purple::after {
+  content: '#{variables.$color-purple}';
+}

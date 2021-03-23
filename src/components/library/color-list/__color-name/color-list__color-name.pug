@@ -1,0 +1,8 @@
+//-
+  options.colorName - color name (string)
+
+mixin color-list__color-name(options)
+  if !options
+    - options = {};
+
+  span.color-list__color-name= options.colorName

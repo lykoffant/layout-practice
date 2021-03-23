@@ -1,0 +1,12 @@
+include /components/library/color-list/__item/color-list__item
+
+//-
+  options.colorList - color list (Array<Object>)
+
+mixin color-list(options)
+  if !options
+    - options = {};
+
+  ul.color-list
+    each value in options.colorList
+      +color-list__item({colorName: value.colorName})

@@ -3,6 +3,8 @@ include /components/library/main/main
 include /components/library/title-1/title-1
 include /components/library/demo-section/demo-section
 include /components/library/title-2/title-2
+include /components/library/grid-of-colors-and-type/grid-of-colors-and-type
+include /components/library/color-list/color-list
 
 doctype html
 html(lang='en')
@@ -17,6 +19,8 @@ html(lang='en')
 
       +demo-section({mixes: ['main__section'], theme: 'colors-and-type'})
         +title-2({text: 'Colors & Type', visuallyHidden: true})
+        +grid-of-colors-and-type
+          +color-list({colorList: [ {colorName: 'Dark Shade 100%'}, {colorName: 'Dark Shade 75%'}, {colorName: 'Dark Shade 50%'}, {colorName: 'Dark Shade 25%'}, {colorName: 'Dark Shade 5%'}, {colorName: 'Purple'}, {colorName: 'Green'}, ]})
 
       +demo-section({mixes: ['main__section'], theme: 'form-elements'})
         +title-2({text: 'Form Elements', visuallyHidden: true})

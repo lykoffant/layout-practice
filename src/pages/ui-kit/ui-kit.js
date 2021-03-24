@@ -8,3 +8,4 @@ import '@components/library/title-2/title-2.js';
 import '@components/library/grid-of-colors-and-type/grid-of-colors-and-type.js';
 import '@components/library/color-list/color-list.js';
 import '@components/library/type-list/type-list.js';
+import '@components/library/title-3/title-3';

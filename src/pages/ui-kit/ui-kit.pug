@@ -5,6 +5,7 @@ include /components/library/demo-section/demo-section
 include /components/library/title-2/title-2
 include /components/library/grid-of-colors-and-type/grid-of-colors-and-type
 include /components/library/color-list/color-list
+include /components/library/type-list/type-list
 
 doctype html
 html(lang='en')
@@ -29,6 +30,55 @@ html(lang='en')
               {colorName: 'Dark Shade 5%'},
               {colorName: 'Purple'},
               {colorName: 'Green'},
+            ]
+          })
+          +type-list({
+            lang: 'ru',
+            typeList: [
+              {
+                term: {
+                  lang: 'ru',
+                  text: 'h1',
+                  mixes: ['title-1'],
+                },
+                details: {
+                  lang: 'ru',
+                  text: 'This one is the sub-section or widget title',
+                  mixes: ['title-1'],
+                },
+              },
+              {
+                term: {
+                  text: 'h2',
+                  mixes: ['title-2'],
+                },
+                details: {
+                  text: 'Next one is the item title inside widgets',
+                  mixes: ['title-2'],
+                },
+              },
+              {
+                term: {
+                  text: 'h3',
+                  mixes: ['title-3'],
+                },
+                details: {
+                  text: 'This is a label or CTA text',
+                  mixes: ['title-3'],
+                },
+              },
+              {
+                term: {
+                  text: 'body',
+                  theme: 'body',
+                  mixes: ['body'],
+                },
+                details: {
+                  text: 'This is the body text which is used for \
+                          most of the design, like paragraphs, lists, etc.',
+                  mixes: ['body'],
+                },
+              },
             ]
           })
 

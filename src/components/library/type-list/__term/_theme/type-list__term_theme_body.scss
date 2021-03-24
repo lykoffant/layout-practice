@@ -1,0 +1,7 @@
+.type-list__term_theme_body {
+  text-transform: none;
+}
+
+.type-list__term_theme_body::first-letter {
+  text-transform: uppercase;
+}

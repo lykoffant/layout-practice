@@ -1,0 +1,20 @@
+//-
+  options.text  - details text (string)
+  options.lang  - details language (string)
+  options.mixes - an array of mix names (Array<string>)
+
+mixin type-list__details(options)
+  if !options
+    - options = {};
+
+  -
+    let classes = [];
+
+    if (options.mixes.length !== 0) {
+      classes = classes.concat(options.mixes)
+    }
+
+  dd(
+    class=classes.join(' ')
+    lang=options.lang
+  )= options.text

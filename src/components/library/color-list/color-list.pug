@@ -2,11 +2,12 @@ include /components/library/color-list/__item/color-list__item
 
 //-
   options.colorList - color list (Array<Object>)
+  options.lang      - language (string)
 
 mixin color-list(options)
   if !options
     - options = {};
 
-  ul.color-list
+  ul.color-list(lang=options.lang)
     each value in options.colorList
-      +color-list__item({colorName: value.colorName})
+      +color-list__item({lang: value.langItem, colorName: value.colorName, langColorName: value.langColorName})

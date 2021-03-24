@@ -1,0 +1,8 @@
+@use '@theme/variables';
+
+.type-list__term {
+  color: variables.$color-dark-25;
+  font-weight: variables.$text-font-weight-normal;
+  text-align: right;
+  text-transform: uppercase;
+}

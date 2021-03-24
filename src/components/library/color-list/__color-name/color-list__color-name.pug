@@ -1,8 +1,9 @@
 //-
   options.colorName - color name (string)
+  options.lang      - language (string)
 
 mixin color-list__color-name(options)
   if !options
     - options = {};
 
-  span.color-list__color-name= options.colorName
+  span.color-list__color-name(lang=options.lang)= options.colorName

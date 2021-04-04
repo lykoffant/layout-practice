@@ -11,3 +11,4 @@ import '@components/library/color-list/color-list.js';
 import '@components/library/type-list/type-list.js';
 
 import '@components/library/grid-of-form-elements/grid-of-form-elements.js';
+import '@components/library/container/container.js';

@@ -8,6 +8,8 @@ include /components/library/grid-of-colors-and-type/grid-of-colors-and-type
 include /components/library/color-list/color-list
 include /components/library/type-list/type-list
 
+include /components/library/grid-of-form-elements/grid-of-form-elements
+
 doctype html
 html(lang='en')
   head
@@ -82,6 +84,7 @@ html(lang='en')
 
       +demo-section({mixes: ['main__section'], theme: 'form-elements'})
         +title-2({text: 'Form Elements', visuallyHidden: true})
+        +grid-of-form-elements
 
       +demo-section({mixes: ['main__section'], theme: 'cards'})
         +title-2({text: 'Cards', visuallyHidden: true})

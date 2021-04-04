@@ -1,0 +1,14 @@
+//-
+  options.mixes - an array of mix names (Array<string>)
+
+mixin demo-subsection__header(options)
+  if !options
+    - options = {};
+
+  -
+    let classes = '';
+
+    classes += options.mixes ? options.mixes.join(' ') : '';
+
+  header.demo-subsection__header(class=classes)
+    block

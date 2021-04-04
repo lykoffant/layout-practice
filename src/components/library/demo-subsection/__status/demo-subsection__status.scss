@@ -1,0 +1,12 @@
+@use '@theme/variables';
+
+.demo-subsection__status {
+  color: variables.$color-dark-50;
+  font-weight: variables.$text-font-weight-normal;
+  font-style: variables.$text-font-style;
+
+  font-size: 0.857rem;
+  line-height: 1.071rem;
+
+  text-transform: uppercase;
+}

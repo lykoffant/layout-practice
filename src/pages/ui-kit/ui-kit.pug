@@ -8,6 +8,9 @@ include /components/library/grid-of-colors-and-type/grid-of-colors-and-type
 include /components/library/color-list/color-list
 include /components/library/type-list/type-list
 
+include /components/library/grid-of-form-elements/grid-of-form-elements
+include /components/library/container/container
+
 doctype html
 html(lang='en')
   head
@@ -82,6 +85,18 @@ html(lang='en')
 
       +demo-section({mixes: ['main__section'], theme: 'form-elements'})
         +title-2({text: 'Form Elements', visuallyHidden: true})
+        +grid-of-form-elements
+          +container({mixes: ['grid-of-from-elements__container-1']})
+          +container({mixes: ['grid-of-from-elements__container-2']})
+          +container({mixes: ['grid-of-from-elements__container-3']})
+          +container({mixes: ['grid-of-from-elements__container-4']})
+          +container({mixes: ['grid-of-from-elements__container-5']})
+          +container({mixes: ['grid-of-from-elements__container-6']})
+          +container({mixes: ['grid-of-from-elements__container-7']})
+          +container({mixes: ['grid-of-from-elements__container-8']})
+          +container({mixes: ['grid-of-from-elements__container-9']})
+          +container({mixes: ['grid-of-from-elements__container-10']})
+          +container({mixes: ['grid-of-from-elements__container-11']})
 
       +demo-section({mixes: ['main__section'], theme: 'cards'})
         +title-2({text: 'Cards', visuallyHidden: true})

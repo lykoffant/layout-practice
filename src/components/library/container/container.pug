@@ -1,0 +1,15 @@
+//-
+  options.mixes - an array of mix names (Array<string>)
+  options.lang  - language (string)
+
+mixin container(options)
+  if !options
+    - options = {};
+
+  -
+    let classes = '';
+
+    classes += options.mixes ? options.mixes.join(' ') : '';
+
+  .container(class=classes lang=options.lang)
+    block

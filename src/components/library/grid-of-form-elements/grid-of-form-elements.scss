@@ -1,0 +1,18 @@
+.grid-of-form-elements {
+  display: grid;
+  grid-template-areas:
+    'a b c'
+    '. . .'
+    'd e f'
+    '. . .'
+    'g j k'
+    '. . .'
+    'l m m';
+  grid-template-rows: auto 100px auto 54px auto 100px auto;
+
+  grid-template-columns: 1fr 1fr auto;
+
+  min-height: 100px;
+
+  background-color: #fff;
+}

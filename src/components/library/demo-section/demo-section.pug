@@ -1,5 +1,4 @@
 //-
-  options.mixes      - an array of mix names (Array<String>)
   options.theme      - theme name (String)
   options.attributes - attributes (Object)
 
@@ -23,10 +22,6 @@ mixin demo-section(options)
       case 'headers-and-footers':
         classes.push('demo-section_theme_headers-and-footers');
         break;
-    }
-
-    if (options.mixes) {
-      classes = classes.concat(options.mixes)
     }
 
   section.demo-section(class=classes)&attributes(options.attributes)

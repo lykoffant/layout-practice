@@ -1,6 +1,7 @@
 //-
   options.text            - title text (string)
   options.vissuallyHidden - enable/disable available title hiding (boolean)
+  options.attributes      - attributes (Object)
 
 mixin title-1(options)
   if !options
@@ -13,4 +14,4 @@ mixin title-1(options)
       classes.push('title-1_visually-hidden');
     }
 
-  h1.title-1(class=classes)= options.text
+  h1.title-1(class=classes)&attributes(options.attributes)= options.text

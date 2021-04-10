@@ -8,7 +8,10 @@ mixin title-3(options)
     - options = {};
 
   -
-    var classes = '';
-    classes += options.visuallyHidden ? 'title-3_visually-hidden' : '';
+    let classes = [];
+
+    if (options.visuallyHidden === true) {
+      classes.push('title-3_visually-hidden');
+    }
 
   h2.title-3(class=classes, lang=options.lang)= options.text

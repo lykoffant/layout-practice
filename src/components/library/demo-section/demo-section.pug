@@ -1,6 +1,7 @@
 //-
   options.mixes - an array of mix names (Array<string>)
   options.theme - theme name (string)
+  options.attributes - attributes (Object)
 
 mixin demo-section(options)
   if !options
@@ -28,5 +29,5 @@ mixin demo-section(options)
       classes = classes.concat(options.mixes)
     }
 
-  section.demo-section(class=classes)
+  section.demo-section(class=classes)&attributes(options.attributes)
     block

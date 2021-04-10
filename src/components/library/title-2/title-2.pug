@@ -1,14 +1,17 @@
 //-
-  options.text            - block text (string)
-  options.vissuallyHidden - enable/disable available block hiding (boolean)
-  options.lang            - block language (string)
+  options.text            - text (String)
+  options.vissuallyHidden - enable/disable available block hiding (Boolean)
+  options.attributes      - attributes (Object)
 
 mixin title-2(options)
   if !options
     - options = {};
 
   -
-    var classes = '';
-    classes += options.visuallyHidden ? 'title-2_visually-hidden' : '';
+    let classes = [];
 
-  h2.title-2(class=classes, lang=options.lang)= options.text
+    if (options.visuallyHidden === true) {
+      classes.push('title-2_visually-hidden');
+    }
+
+  h2.title-2(class=classes)&attributes(options.attributes)= options.text

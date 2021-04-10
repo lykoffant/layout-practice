@@ -8,27 +8,26 @@ mixin demo-section(options)
     - options = {};
 
   -
-    let classes = '';
-    const blockName = 'demo-section';
-    const modifierName = 'theme';
+    let classes = [];
 
     switch (options.theme) {
       case 'colors-and-type':
-        classes += `${blockName}_${modifierName}_colors-and-type`;
-        break
+        classes.push('demo-section_theme_colors-and-type');
+        break;
       case 'form-elements':
-        classes += `${blockName}_${modifierName}_form-elements`;
-        break
+        classes.push('demo-section_theme_form-elements');
+        break;
       case 'cards':
-        classes += `${blockName}_${modifierName}_cards`;
-        break
+        classes.push('demo-section_theme_cards');
+        break;
       case 'headers-and-footers':
-        classes += `${blockName}_${modifierName}_headers-and-footers`;
-        break
+        classes.push('demo-section_theme_headers-and-footers');
+        break;
     }
 
-    classes += ' ';
-    classes += options.mixes ? options.mixes.join(' ') : '';
+    if (options.mixes) {
+      classes = classes.concat(options.mixes)
+    }
 
   section.demo-section(class=classes, lang=options.lang)
     block

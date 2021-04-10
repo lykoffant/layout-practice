@@ -22,7 +22,12 @@ html(lang='en')
     +main
       +title-1({ text: 'UI kit demo', visuallyHidden: true })
 
-      +demo-section({mixes: ['main__section'], theme: 'colors-and-type'})
+      +demo-section({
+        theme: 'colors-and-type',
+        attributes: {
+          'class': ['main__section'],
+        },
+      })
         +title-2({text: 'Colors & Type', visuallyHidden: true})
         +grid-of-colors-and-type
           +color-list({
@@ -83,7 +88,12 @@ html(lang='en')
             ]
           })
 
-      +demo-section({mixes: ['main__section'], theme: 'form-elements'})
+      +demo-section({
+        theme: 'form-elements',
+        attributes: {
+          'class': ['main__section'],
+        },
+      })
         +title-2({text: 'Form Elements', visuallyHidden: true})
         +grid-of-form-elements
           +container({mixes: ['grid-of-from-elements__container-1']})
@@ -98,8 +108,18 @@ html(lang='en')
           +container({mixes: ['grid-of-from-elements__container-10']})
           +container({mixes: ['grid-of-from-elements__container-11']})
 
-      +demo-section({mixes: ['main__section'], theme: 'cards'})
+      +demo-section({
+        theme: 'cards',
+        attributes: {
+          'class': ['main__section'],
+        },
+      })
         +title-2({text: 'Cards', visuallyHidden: true})
 
-      +demo-section({mixes: ['main__section'], theme: 'headers-and-footers'})
+      +demo-section({
+        theme: 'headers-and-footers',
+        attributes: {
+          'class': ['main__section'],
+        },
+      })
         +title-2({text: 'Headers & Footers', visuallyHidden: true})

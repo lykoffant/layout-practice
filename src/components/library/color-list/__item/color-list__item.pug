@@ -1,7 +1,7 @@
 include /components/library/color-list/__color-name/color-list__color-name
 
 //-
-  options.colorNameOptions - color name options (String)
+  options.colorNameOptions - color name options (Object)
   options.attributes       - attributes (Object)
 
 mixin color-list__item(options)
@@ -37,4 +37,4 @@ mixin color-list__item(options)
     }
 
   li.color-list__item(class=classes)&attributes(options.attributes)
-    +color-list__color-name(colorNameOptions)
+    +color-list__color-name(options.colorNameOptions)

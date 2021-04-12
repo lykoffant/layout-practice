@@ -1,8 +1,9 @@
 //-
   options.colorName - color name (string)
+  options.attributes - attributes (Object)
 
 mixin color-list__color-name(options)
   if !options
     - options = {};
 
-  span.color-list__color-name= options.colorName
+  span.color-list__color-name&attributes(options.attributes)= options.colorName

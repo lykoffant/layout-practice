@@ -1,17 +1,16 @@
 include /components/library/color-list/__color-name/color-list__color-name
 
 //-
-  options.colorName     - color name (string)
-  options.lang          - language (string)
-  options.langColorName - color name language (string)
+  options.colorNameOptions - color name options (Object)
+  options.attributes       - attributes (Object)
 
 mixin color-list__item(options)
   if !options
     - options = {};
 
   -
-    var classes = [];
-    var colorName = options.colorName;
+    let classes = [];
+    let colorName = options.colorNameOptions.colorName;
 
     switch (colorName) {
       case 'Dark Shade 100%':
@@ -37,5 +36,5 @@ mixin color-list__item(options)
         break;
     }
 
-  li.color-list__item(class=classes.join(" "), lang=options.lang)
-    +color-list__color-name({lang: options.langColorName, colorName: colorName})
+  li.color-list__item(class=classes)&attributes(options.attributes)
+    +color-list__color-name(options.colorNameOptions)

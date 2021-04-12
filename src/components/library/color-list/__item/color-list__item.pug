@@ -37,5 +37,5 @@ mixin color-list__item(options)
         break;
     }
 
-  li.color-list__item(class=classes.join(" "), lang=options.lang)
+  li.color-list__item(class=classes, lang=options.lang)
     +color-list__color-name({lang: options.langColorName, colorName: colorName})

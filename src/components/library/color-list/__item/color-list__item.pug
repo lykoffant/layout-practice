@@ -3,7 +3,6 @@ include /components/library/color-list/__color-name/color-list__color-name
 //-
   options.colorName     - color name (string)
   options.attributes - attributes (Object)
-  options.langColorName - color name language (string)
 
 mixin color-list__item(options)
   if !options
@@ -38,4 +37,4 @@ mixin color-list__item(options)
     }
 
   li.color-list__item(class=classes)&attributes(options.attributes)
-    +color-list__color-name({lang: options.langColorName, colorName: colorName})
+    +color-list__color-name({colorName: colorName})

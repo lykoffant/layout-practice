@@ -4,10 +4,7 @@ include /components/library/color-list/__color-name/color-list__color-name
   options.colorNameOptions - color name options (Object)
   options.attributes       - attributes (Object)
 
-mixin color-list__item(options)
-  if !options
-    - options = {};
-
+mixin color-list__item(options = {})
   -
     let classes = [];
     let colorName = options.colorNameOptions.colorName;

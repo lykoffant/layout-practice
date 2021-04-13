@@ -1,6 +1,5 @@
 //-
   options.text  - term text (string)
-  options.lang  - term language (string)
   options.theme - term theme (string)
   options.mixes - an array of mix names (Array<string>)
 
@@ -19,7 +18,4 @@ mixin type-list__term(options)
       classes = classes.concat(options.mixes)
     }
 
-  dt.type-list__term(
-    class=classes
-    lang=options.lang
-  )= options.text
+  dt.type-list__term(class=classes)= options.text

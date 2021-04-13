@@ -2,10 +2,7 @@
   options.theme      - theme name (String)
   options.attributes - attributes (Object)
 
-mixin demo-section(options)
-  if !options
-    - options = {};
-
+mixin demo-section(options = {})
   -
     let classes = [];
 

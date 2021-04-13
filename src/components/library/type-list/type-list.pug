@@ -2,29 +2,11 @@ include /components/library/type-list/__term/type-list__term
 include /components/library/type-list/__details/type-list__details
 
 //-
-  options.lang                   - language (string)
-  options.typelist.term.text     - term text (string)
-  options.typelist.term.lang     - term language (string)
-  options.typelist.term.theme    - term theme (string)
-  options.typelist.details.mixes - an array of mix names (Array<string>)
-  options.typelist.details.text  - details text (string)
-  options.typelist.details.lang  - datails language (string)
-  options.typelist.details.mixes - an array of mix names (Array<string>)
+  options.typelist   - type list options (Array<Object>)
+  options.attributes - attributes (Object)
 
-mixin type-list(options)
-  if !options
-    - options = {};
-
-  dl.type-list(lang=options.lang)
+mixin type-list(options = {})
+  dl.type-list&attributes(options.attributes)
     each value in options.typeList
-      +type-list__term({
-        text: value.term.text,
-        lang: value.term.lang,
-        theme: value.term.theme,
-        mixes: value.term.mixes,
-      })
-      +type-list__details({
-        text: value.details.text,
-        lang: value.details.lang,
-        mixes: value.details.mixes,
-      })
+      +type-list__term(value.termOptions)
+      +type-list__details(value.detailsOptions)

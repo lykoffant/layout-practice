@@ -2,8 +2,5 @@
   options.colorName  - color name (String)
   options.attributes - attributes (Object)
 
-mixin color-list__color-name(options)
-  if !options
-    - options = {};
-
+mixin color-list__color-name(options = {})
   span.color-list__color-name&attributes(options.attributes)= options.colorName

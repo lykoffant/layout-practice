@@ -1,6 +1,7 @@
 //-
   options.text  - term text (string)
   options.theme - term theme (string)
+  options.attributes - attributes (Object)
 
 mixin type-list__term(options)
   if !options
@@ -13,4 +14,4 @@ mixin type-list__term(options)
       classes.push('type-list__term_theme_body')
     }
 
-  dt.type-list__term(class=classes)= options.text
+  dt.type-list__term(class=classes)&attributes(options.attributes)= options.text

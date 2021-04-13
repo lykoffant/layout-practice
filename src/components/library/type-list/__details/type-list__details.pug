@@ -1,6 +1,5 @@
 //-
   options.text  - details text (string)
-  options.lang  - details language (string)
   options.mixes - an array of mix names (Array<string>)
 
 mixin type-list__details(options)
@@ -14,7 +13,4 @@ mixin type-list__details(options)
       classes = classes.concat(options.mixes)
     }
 
-  dd(
-    class=classes
-    lang=options.lang
-  )= options.text
+  dd(class=classes)= options.text

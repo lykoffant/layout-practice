@@ -3,7 +3,6 @@ include /components/library/demo-subsection/__status/demo-subsection__status
 include /components/library/title-3/title-3
 
 //-
-  options.mixes      - an array of mix names (Array<string>)
   options.titleText  - title text (string)
   options.statusText - status text (String)
 
@@ -11,12 +10,7 @@ mixin demo-subsection(options)
   if !options
     - options = {};
 
-  -
-    let classes = '';
-
-    classes += options.mixes ? options.mixes.join(' ') : '';
-
-  section.demo-subsection(class=classes)
+  section.demo-subsection
     +demo-subsection__header
       +title-3({text: options.titleText})
       +demo-subsection__status({text: options.statusText})

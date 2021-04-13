@@ -1,6 +1,5 @@
 //-
   options.mixes - an array of mix names (Array<string>)
-  options.lang  - language (string)
 
 mixin container(options)
   if !options
@@ -11,5 +10,5 @@ mixin container(options)
 
     classes += options.mixes ? options.mixes.join(' ') : '';
 
-  .container(class=classes lang=options.lang)
+  .container(class=classes)
     block

@@ -2,8 +2,5 @@
   options.text       - details text (String)
   options.attributes - attributes (Object)
 
-mixin type-list__details(options)
-  if !options
-    - options = {};
-
+mixin type-list__details(options = {})
   dd&attributes(options.attributes)= options.text

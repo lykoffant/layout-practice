@@ -1,14 +1,6 @@
-//-
-  options.mixes - an array of mix names (Array<string>)
-
 mixin container(options)
   if !options
     - options = {};
 
-  -
-    let classes = '';
-
-    classes += options.mixes ? options.mixes.join(' ') : '';
-
-  .container(class=classes)
+  .container
     block

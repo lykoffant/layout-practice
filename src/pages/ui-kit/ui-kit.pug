@@ -44,45 +44,45 @@ html(lang='en')
           +type-list({
             typeList: [
               {
-                term: {
+                termOptions: {
                   text: 'h1',
-                  mixes: ['title-1'],
+                  attributes: {'class': 'title-1'},
                 },
-                details: {
+                detailsOptions: {
                   text: 'This one is the sub-section or widget title',
-                  mixes: ['title-1'],
+                  attributes: {'class': 'title-1'},
                 },
               },
               {
-                term: {
+                termOptions: {
                   text: 'h2',
-                  mixes: ['title-2'],
+                  attributes: {'class': 'title-2'},
                 },
-                details: {
+                detailsOptions: {
                   text: 'Next one is the item title inside widgets',
-                  mixes: ['title-2'],
+                  attributes: {'class': 'title-2'},
                 },
               },
               {
-                term: {
+                termOptions: {
                   text: 'h3',
-                  mixes: ['title-3'],
+                  attributes: {'class': 'title-3'},
                 },
-                details: {
+                detailsOptions: {
                   text: 'This is a label or CTA text',
-                  mixes: ['title-3'],
+                  attributes: {'class': 'title-3'},
                 },
               },
               {
-                term: {
+                termOptions: {
                   text: 'body',
                   theme: 'body',
-                  mixes: ['body'],
+                  attributes: {'class': 'body'},
                 },
-                details: {
+                detailsOptions: {
                   text: 'This is the body text which is used for \
                           most of the design, like paragraphs, lists, etc.',
-                  mixes: ['body'],
+                  attributes: {'class': 'body'},
                 },
               },
             ]
@@ -96,17 +96,39 @@ html(lang='en')
       })
         +title-2({text: 'Form Elements', visuallyHidden: true})
         +grid-of-form-elements
-          +container({mixes: ['grid-of-from-elements__container-1']})
-          +container({mixes: ['grid-of-from-elements__container-2']})
-          +container({mixes: ['grid-of-from-elements__container-3']})
-          +container({mixes: ['grid-of-from-elements__container-4']})
-          +container({mixes: ['grid-of-from-elements__container-5']})
-          +container({mixes: ['grid-of-from-elements__container-6']})
-          +container({mixes: ['grid-of-from-elements__container-7']})
-          +container({mixes: ['grid-of-from-elements__container-8']})
-          +container({mixes: ['grid-of-from-elements__container-9']})
-          +container({mixes: ['grid-of-from-elements__container-10']})
-          +container({mixes: ['grid-of-from-elements__container-11']})
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-1'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-2'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-3'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-4'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-5'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-6'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-7'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-8'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-9'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-10'}
+          })
+          +container({
+            attributes: {'class': 'grid-of-from-elements__container-11'}
+          })
 
       +demo-section({
         theme: 'cards',

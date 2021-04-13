@@ -3,10 +3,7 @@
   options.vissuallyHidden - enable/disable available title hiding (Boolean)
   options.attributes      - attributes (Object)
 
-mixin title-1(options)
-  if !options
-    - options = {};
-
+mixin title-1(options = {})
   -
     let classes = [];
 

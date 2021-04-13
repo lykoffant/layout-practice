@@ -1,13 +1,9 @@
 //-
-  options.text  - term text (string)
-  options.lang  - term language (string)
-  options.theme - term theme (string)
-  options.mixes - an array of mix names (Array<string>)
+  options.text       - term text (String)
+  options.theme      - term theme (String)
+  options.attributes - attributes (Object)
 
-mixin type-list__term(options)
-  if !options
-    - options = {};
-
+mixin type-list__term(options = {})
   -
     let classes = [];
 
@@ -15,11 +11,4 @@ mixin type-list__term(options)
       classes.push('type-list__term_theme_body')
     }
 
-    if (options.mixes.length !== 0) {
-      classes = classes.concat(options.mixes)
-    }
-
-  dt.type-list__term(
-    class=classes.join(' ')
-    lang=options.lang
-  )= options.text
+  dt.type-list__term(class=classes)&attributes(options.attributes)= options.text

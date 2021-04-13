@@ -3,10 +3,7 @@
   options.vissuallyHidden - enable/disable available block hiding (Boolean)
   options.attributes      - attributes (Object)
 
-mixin title-2(options)
-  if !options
-    - options = {};
-
+mixin title-2(options = {})
   -
     let classes = [];
 

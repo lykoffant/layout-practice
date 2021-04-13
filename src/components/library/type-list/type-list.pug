@@ -5,10 +5,7 @@ include /components/library/type-list/__details/type-list__details
   options.typelist   - type list options (Array<Object>)
   options.attributes - attributes (Object)
 
-mixin type-list(options)
-  if !options
-    - options = {};
-
+mixin type-list(options = {})
   dl.type-list&attributes(options.attributes)
     each value in options.typeList
       +type-list__term(value.termOptions)

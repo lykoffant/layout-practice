@@ -1,8 +1,9 @@
 //-
   options.text  - details text (string)
+  options.attributes - attributes (Object)
 
 mixin type-list__details(options)
   if !options
     - options = {};
 
-  dd= options.text
+  dd&attributes(options.attributes)= options.text

@@ -1,3 +1,6 @@
+//-
+  options.attributes - attributes (Object)
+
 mixin container(options = {})
-  .container
+  .container&attributes(options.attributes)
     block

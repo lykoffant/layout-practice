@@ -3,10 +3,7 @@
   options.theme      - term theme (String)
   options.attributes - attributes (Object)
 
-mixin type-list__term(options)
-  if !options
-    - options = {};
-
+mixin type-list__term(options = {})
   -
     let classes = [];
 

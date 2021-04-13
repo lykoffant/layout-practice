@@ -4,12 +4,13 @@ include /components/library/type-list/__details/type-list__details
 //-
   options.typelist.termOptions    - term options (Object)
   options.typelist.detailsOptions - detailsOptions (Object)
+  options.attributes              - attributes (Object)
 
 mixin type-list(options)
   if !options
     - options = {};
 
-  dl.type-list
+  dl.type-list&attributes(options.attributes)
     each value in options.typeList
       +type-list__term(value.termOptions)
       +type-list__details(value.detailsOptions)

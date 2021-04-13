@@ -4,10 +4,7 @@ include /components/library/color-list/__item/color-list__item
   options.colorList  - color list options (Array<Object>)
   options.attributes - attributes (Object)
 
-mixin color-list(options)
-  if !options
-    - options = {};
-
+mixin color-list(options = {})
   ul.color-list&attributes(options.attributes)
     each value in options.colorList
       +color-list__item(value)

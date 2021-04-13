@@ -2,9 +2,7 @@
   options.pixelPerfectDesign  - enable/disable fixed container width for pixel 
                                 perfect design (boolean)
 
-mixin body(options)
-  if !options
-    - options = {};
+mixin body(options = {})
   -
     let classes = [];
 

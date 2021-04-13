@@ -1,7 +1,6 @@
 //-
   options.text  - term text (string)
   options.theme - term theme (string)
-  options.mixes - an array of mix names (Array<string>)
 
 mixin type-list__term(options)
   if !options
@@ -12,10 +11,6 @@ mixin type-list__term(options)
 
     if (options.theme === 'body') {
       classes.push('type-list__term_theme_body')
-    }
-
-    if (options.mixes.length !== 0) {
-      classes = classes.concat(options.mixes)
     }
 
   dt.type-list__term(class=classes)= options.text

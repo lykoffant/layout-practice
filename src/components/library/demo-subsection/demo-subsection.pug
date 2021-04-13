@@ -1,9 +1,6 @@
 //-
   options.attributes - attributes (Object)
 
-mixin demo-subsection(options)
-  if !options
-    - options = {};
-
+mixin demo-subsection(options = {})
   section.demo-subsection&attributes(options.attributes)
     block

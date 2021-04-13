@@ -2,7 +2,6 @@ include /components/library/type-list/__term/type-list__term
 include /components/library/type-list/__details/type-list__details
 
 //-
-  options.lang                   - language (string)
   options.typelist.termOptions    - term options (Object)
   options.typelist.detailsOptions - detailsOptions (Object)
 
@@ -10,7 +9,7 @@ mixin type-list(options)
   if !options
     - options = {};
 
-  dl.type-list(lang=options.lang)
+  dl.type-list
     each value in options.typeList
       +type-list__term(value.termOptions)
       +type-list__details(value.detailsOptions)

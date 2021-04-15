@@ -1,0 +1,76 @@
+include /components/library/title-2/title-2
+
+include /components/auxiliary-library/demo-section/demo-section
+
+include /components/auxiliary-library/grid-of-colors-and-type/grid-of-colors-and-type
+include /components/auxiliary-library/color-list/color-list
+include /components/auxiliary-library/type-list/type-list
+
++demo-section({
+  theme: 'colors-and-type',
+  attributes: {
+    'class': ['main__section'],
+  },
+})
+  +title-2({
+    text: 'Colors & Type',
+    attributes: {'class': 'visually-hidden-block'},
+  })
+  +grid-of-colors-and-type
+    +color-list({
+      colorList: [
+        {colorNameOptions: {colorName: 'Dark Shade 100%'}},
+        {colorNameOptions: {colorName: 'Dark Shade 75%'}},
+        {colorNameOptions: {colorName: 'Dark Shade 50%'}},
+        {colorNameOptions: {colorName: 'Dark Shade 25%'}},
+        {colorNameOptions: {colorName: 'Dark Shade 5%'}},
+        {colorNameOptions: {colorName: 'Purple'}},
+        {colorNameOptions: {colorName: 'Green'}},
+      ],
+    })
+    +type-list({
+      typeList: [
+        {
+          termOptions: {
+            text: 'h1',
+            attributes: {'class': 'title-1'},
+          },
+          detailsOptions: {
+            text: 'This one is the sub-section or widget title',
+            attributes: {'class': 'title-1'},
+          },
+        },
+        {
+          termOptions: {
+            text: 'h2',
+            attributes: {'class': 'title-2'},
+          },
+          detailsOptions: {
+            text: 'Next one is the item title inside widgets',
+            attributes: {'class': 'title-2'},
+          },
+        },
+        {
+          termOptions: {
+            text: 'h3',
+            attributes: {'class': 'title-3'},
+          },
+          detailsOptions: {
+            text: 'This is a label or CTA text',
+            attributes: {'class': 'title-3'},
+          },
+        },
+        {
+          termOptions: {
+            text: 'body',
+            theme: 'body',
+            attributes: {'class': 'body'},
+          },
+          detailsOptions: {
+            text: 'This is the body text which is used for \
+                    most of the design, like paragraphs, lists, etc.',
+            attributes: {'class': 'body'},
+          },
+        },
+      ]
+    })

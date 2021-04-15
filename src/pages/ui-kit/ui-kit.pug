@@ -22,7 +22,11 @@ html(lang='en')
     title UI kit
   +body({pixelPerfectDesign: false})
     +main
-      +title-1({ text: 'UI kit demo', visuallyHidden: true })
+      +title-1({
+        text: 'UI kit demo',
+        visuallyHidden: false,
+        attributes: {'class': 'visually-hidden-block'},
+      })
 
       +demo-section({
         theme: 'colors-and-type',
@@ -30,7 +34,11 @@ html(lang='en')
           'class': ['main__section'],
         },
       })
-        +title-2({text: 'Colors & Type', visuallyHidden: true})
+        +title-2({
+          text: 'Colors & Type',
+          visuallyHidden: false,
+          attributes: {'class': 'visually-hidden-block'},
+        })
         +grid-of-colors-and-type
           +color-list({
             colorList: [
@@ -96,7 +104,11 @@ html(lang='en')
           'class': ['main__section'],
         },
       })
-        +title-2({text: 'Form Elements', visuallyHidden: true})
+        +title-2({
+          text: 'Form Elements',
+          visuallyHidden: false,
+          attributes: {'class': 'visually-hidden-block'},
+        })
         +grid-of-form-elements
           +container({
             attributes: {'class': 'grid-of-from-elements__container-1'}
@@ -138,7 +150,11 @@ html(lang='en')
           'class': ['main__section'],
         },
       })
-        +title-2({text: 'Cards', visuallyHidden: true})
+        +title-2({
+          text: 'Cards',
+          visuallyHidden: false,
+          attributes: {'class': 'visually-hidden-block'},
+        })
 
       +demo-section({
         theme: 'headers-and-footers',
@@ -146,4 +162,8 @@ html(lang='en')
           'class': ['main__section'],
         },
       })
-        +title-2({text: 'Headers & Footers', visuallyHidden: true})
+        +title-2({
+          text: 'Headers & Footers',
+          visuallyHidden: false,
+          attributes: {'class': 'visually-hidden-block'},
+        })

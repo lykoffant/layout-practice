@@ -1,6 +1,7 @@
 import '@theme/global.scss';
 
 import '@components/library/body/body.js';
+import '@components/library/visually-hidden-block/visually-hidden-block.js';
 import '@components/library/title-1/title-1.js';
 import '@components/library/title-2/title-2.js';
 import '@components/library/title-3/title-3.js';

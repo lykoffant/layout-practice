@@ -1,15 +1,7 @@
 include /components/library/body/body
-include /components/library/main/main
 include /components/library/title-1/title-1
-include /components/library/title-2/title-2
-include /components/library/title-3/title-3
-include /components/library/demo-section/demo-section
-include /components/library/grid-of-colors-and-type/grid-of-colors-and-type
-include /components/library/color-list/color-list
-include /components/library/type-list/type-list
 
-include /components/library/grid-of-form-elements/grid-of-form-elements
-include /components/library/container/container
+include /components/auxiliary-library/main/main
 
 doctype html
 html(lang='en')
@@ -20,128 +12,11 @@ html(lang='en')
     title UI kit
   +body({pixelPerfectDesign: false})
     +main
-      +title-1({ text: 'UI kit demo', visuallyHidden: true })
-
-      +demo-section({
-        theme: 'colors-and-type',
-        attributes: {
-          'class': ['main__section'],
-        },
+      +title-1({
+        text: 'UI kit demo',
+        attributes: {'class': 'visually-hidden-block'},
       })
-        +title-2({text: 'Colors & Type', visuallyHidden: true})
-        +grid-of-colors-and-type
-          +color-list({
-            colorList: [
-              {colorNameOptions: {colorName: 'Dark Shade 100%'}},
-              {colorNameOptions: {colorName: 'Dark Shade 75%'}},
-              {colorNameOptions: {colorName: 'Dark Shade 50%'}},
-              {colorNameOptions: {colorName: 'Dark Shade 25%'}},
-              {colorNameOptions: {colorName: 'Dark Shade 5%'}},
-              {colorNameOptions: {colorName: 'Purple'}},
-              {colorNameOptions: {colorName: 'Green'}},
-            ],
-          })
-          +type-list({
-            typeList: [
-              {
-                termOptions: {
-                  text: 'h1',
-                  attributes: {'class': 'title-1'},
-                },
-                detailsOptions: {
-                  text: 'This one is the sub-section or widget title',
-                  attributes: {'class': 'title-1'},
-                },
-              },
-              {
-                termOptions: {
-                  text: 'h2',
-                  attributes: {'class': 'title-2'},
-                },
-                detailsOptions: {
-                  text: 'Next one is the item title inside widgets',
-                  attributes: {'class': 'title-2'},
-                },
-              },
-              {
-                termOptions: {
-                  text: 'h3',
-                  attributes: {'class': 'title-3'},
-                },
-                detailsOptions: {
-                  text: 'This is a label or CTA text',
-                  attributes: {'class': 'title-3'},
-                },
-              },
-              {
-                termOptions: {
-                  text: 'body',
-                  theme: 'body',
-                  attributes: {'class': 'body'},
-                },
-                detailsOptions: {
-                  text: 'This is the body text which is used for \
-                          most of the design, like paragraphs, lists, etc.',
-                  attributes: {'class': 'body'},
-                },
-              },
-            ]
-          })
-
-      +demo-section({
-        theme: 'form-elements',
-        attributes: {
-          'class': ['main__section'],
-        },
-      })
-        +title-2({text: 'Form Elements', visuallyHidden: true})
-        +grid-of-form-elements
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-1'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-2'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-3'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-4'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-5'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-6'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-7'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-8'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-9'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-10'}
-          })
-          +container({
-            attributes: {'class': 'grid-of-from-elements__container-11'}
-          })
-
-      +demo-section({
-        theme: 'cards',
-        attributes: {
-          'class': ['main__section'],
-        },
-      })
-        +title-2({text: 'Cards', visuallyHidden: true})
-
-      +demo-section({
-        theme: 'headers-and-footers',
-        attributes: {
-          'class': ['main__section'],
-        },
-      })
-        +title-2({text: 'Headers & Footers', visuallyHidden: true})
+      include includes/colors-and-type.pug
+      include includes/form-elements.pug
+      include includes/cards.pug
+      include includes/headers-and-footers.pug
